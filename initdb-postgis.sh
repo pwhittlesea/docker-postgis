@@ -18,3 +18,5 @@ echo "Loading PostGIS extensions into $EXTRA_DATABASE"
 "${psql[@]}" --dbname="$EXTRA_DATABASE" <<-'EOSQL'
 	CREATE EXTENSION IF NOT EXISTS postgis;
 EOSQL
+
+( ( python /health_endpoint.py & ) & )
