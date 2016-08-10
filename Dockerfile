@@ -1,11 +1,11 @@
 # vim:set ft=dockerfile:
-FROM postgres:9.4.8
+FROM postgres:9.5
 
 # With love from pwhittlesea
 MAINTAINER Phillip Whittlesea <pw.github@thega.me.uk>
 
 ENV POSTGIS_MAJOR 2.2
-ENV POSTGIS_VERSION 2.2.2+dfsg-1.pgdg80+1
+ENV POSTGIS_VERSION 2.2.2+dfsg-4.pgdg80+1
 
 RUN apt-get update \
       && apt-get install -y --no-install-recommends \
